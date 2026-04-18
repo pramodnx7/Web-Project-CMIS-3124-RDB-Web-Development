@@ -1,0 +1,102 @@
+/* --- RDB Services Page Styles --- */
+
+.services-page {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blue-title {
+    color: var(--primary-blue) !important;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout (3 Columns) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Service Card - White Box with Alert Style Border */
+.service-alert-card {
+    background: var(--white);
+    border: 1px solid #333; /* Darker border as requested */
+    border-radius: 20px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease; /* For smooth hover */
+}
+
+/* Hover Style: Lifts up and adds shadow like Alert boxes */
+.service-alert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary-blue);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.service-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.service-alert-card h3 {
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-alert-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Ensures buttons align at the bottom */
+}
+
+/* Learn More Button - Outline Style turning Gold on hover */
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 8px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .services-grid { grid-template-columns: 1fr; }
+}

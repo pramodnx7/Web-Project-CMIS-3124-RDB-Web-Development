@@ -1,0 +1,473 @@
+/* Consumption Loans Page Styles */
+
+.account-page {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+.hero-content {
+    padding-right: 20px;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.icon-placeholder {
+    flex-shrink: 0;
+}
+
+.page-title {
+    font-size: 42px;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hero-image {
+    position: sticky;
+    top: 100px;
+}
+
+.large-image-box {
+    width: 100%;
+    height: 500px;
+    border: 3px solid #0099ab;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.large-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.large-image-box svg {
+    z-index: 1;
+}
+
+/* Stats Row */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border: 2px solid #0099ab;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 153, 171, 0.2);
+}
+
+.stat-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0099ab;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Accordion Section */
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 25px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #f5f5f5;
+}
+
+.accordion-icon {
+    font-size: 24px;
+    color: #0099ab;
+    font-weight: 300;
+    transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fafafa;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+    padding: 0 25px 25px 25px;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.accordion-content li {
+    padding: 8px 0;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.accordion-content li::before {
+    content: "•";
+    color: #0099ab;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-box {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #0099ab;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.image-box svg {
+    z-index: 1;
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #0099ab;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #007a8a;
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #999;
+}
+
+.breadcrumb .current {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: #0099ab;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #0099ab;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-image {
+        position: static;
+    }
+
+    .large-image-box {
+        height: 400px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .large-image-box {
+        height: 300px;
+    }
+
+    .image-box {
+        height: 350px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-page {
+        padding: 40px 0;
+    }
+
+    .icon-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .accordion-header {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
+
+/* Header Adjustments (Optional specific fixes) */
+/* ================= Sleek Navigation Bar Styles ================= */
+
+/* 1. The Blue Top Bar */
+.top-bar {
+    background-color: #0056b3; /* Match your blue */
+    padding: 5px 0 !important;   /* Extremely thin padding */
+    font-size: 13px;             /* Smaller text */
+    line-height: 1;
+    color: #fff;
+}
+
+/* 2. The Main White Navbar Container */
+.main-header, 
+.navbar, 
+.header-wrapper {
+    padding: 0 !important;       /* Remove all default padding */
+    min-height: 60px !important; /* Force a specific small height */
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* 3. The Logo Size */
+.navbar-brand img, 
+.logo img {
+    height: 40px !important;    /* Reduced height to keep bar slim */
+    width: auto;
+    margin: 5px 0;               /* Small buffer around logo */
+}
+
+/* 4. Menu Links Spacing */
+.navbar-nav li a, 
+.nav-menu a {
+    padding: 15px 12px !important; /* Vertical padding controls height */
+    font-size: 14px;               /* Professional, smaller font */
+    font-weight: 500;
+    color: #333;
+    display: block;
+    line-height: 1;                /* Prevents extra height from line spacing */
+}
+
+/* 5. Search Icon and Right Items */
+.search-icon, 
+.header-right {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+/* 6. Breadcrumb Bar (The grey bar below the nav) */
+.breadcrumb-nav {
+    background-color: #f8f9fa;
+    padding: 8px 0 !important;     /* Make this section thin too */
+    border-bottom: 1px solid #eef0f2;
+}
+
+.breadcrumb {
+    margin-bottom: 0;              /* Remove bootstrap default margins */
+    font-size: 13px;
+}

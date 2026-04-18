@@ -1,0 +1,217 @@
+/* Corporate Management Page Styles */
+
+.corporate-page {
+    padding: 30px 20px;
+    background-color: #f4f7f6;
+    min-height: 80vh;
+}
+
+/* White Container Section - Matching Board of Directors Style */
+.leadership-section {
+    max-width: 2000px;
+    margin: -20px auto 30px;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0099ab;
+    font-weight: 700;
+    padding: 40px 30px 20px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0099ab;
+    font-weight: 700;
+    padding: 40px 30px 20px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+/* Members Grid */
+.members-grid {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 30px 40px;
+}
+
+.management-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Member Card - Styled like Product Card */
+.member-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 280px;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(56, 167, 195, 0.679);
+    border-top: 8px solid #37d4d4;
+}
+
+a.member-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Member Photo - Like Product Card Image */
+.member-photo {
+    height: 280px;
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.member-card:hover .member-photo img {
+    transform: scale(1.1);
+}
+
+/* Member Info - Like Product Card Content */
+.member-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0099ab;
+    margin-bottom: 10px;
+    padding: 0 25px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.member-position {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 0 25px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.member-phone,
+.member-email {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.6;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.member-email {
+    color: #0099ab;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-bottom: 25px;
+    display: block;
+}
+
+.member-card:hover .member-email {
+    color: #007a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .members-grid {
+        gap: 25px;
+        padding: 0px 25px 35px;
+    }
+    
+    .member-card {
+        max-width: 100%;
+    }
+    
+    .leadership-section {
+        padding: 0px;
+    }
+    
+    .page-title {
+        padding: 35px 25px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .corporate-page {
+        padding: 20px 15px;
+    }
+    
+    .leadership-section {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+        padding: 30px 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 0px 20px 30px;
+    }
+    
+    .member-photo {
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        padding: 0px 15px 25px;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+        padding: 25px 15px 15px;
+    }
+
+    .leadership-section {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .member-card {
+        max-width: 100%;
+    }
+    
+    .member-photo {
+        height: 300px;
+    }
+}

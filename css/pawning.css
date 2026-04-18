@@ -1,0 +1,304 @@
+/* ================= Pawning (Gold Loans) Page Styles ================= */
+
+.account-page {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================= Hero Section ================= */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    padding-right: 30px;
+}
+
+.hero-content .description {
+    margin-top: 12px;
+    max-width: 520px;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.icon-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    color: #0099ab;
+}
+
+.page-title {
+    font-size: 40px;
+    color: #2f3b45;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.1;
+}
+
+.description p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+.hero-image {
+    position: relative;
+    top: 0;
+}
+
+.large-image-box {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #0099ab;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.large-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+/* ================= Stats Row ================= */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 123, 255, 0.3);
+}
+
+.stat-icon {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    box-shadow: none;
+}
+
+.stat-icon svg {
+    width: 28px;
+    height: 28px;
+    color: #0099ab;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0099ab;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ================= Content Grid ================= */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* ================= Accordion Section ================= */
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 25px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.accordion-icon {
+    font-size: 24px;
+    color: #0099ab;
+    transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fafafa;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px; /* High enough to contain the table */
+    padding: 0 25px 25px;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-content li {
+    padding: 8px 0 8px 20px;
+    color: #555;
+    position: relative;
+}
+
+.accordion-content li::before {
+    content: "•";
+    color: #0099ab;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* ================= Pawning Specific Table ================= */
+.pawning-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+.pawning-table th, .pawning-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: center;
+}
+
+.pawning-table th {
+    background-color: #0099ab;
+    color: white;
+    font-weight: 600;
+}
+
+.pawning-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.last-updated {
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* ================= Contact Box ================= */
+.contact-info-box {
+    background-color: #e6f5f7;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #0099ab;
+    margin-top: 15px;
+}
+
+.contact-info-box p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ================= Image Section ================= */
+.image-box {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #0099ab;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+    .hero-section, .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-image { position: static; }
+}
+
+@media (max-width: 768px) {
+    .stats-row { grid-template-columns: 1fr; }
+    .pawning-table { font-size: 12px; }
+    .pawning-table th, .pawning-table td { padding: 8px 4px; }
+}

@@ -1,0 +1,331 @@
+/* --- Savings Page Styles --- */
+
+.savings-page {
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Blue Title Style */
+.blue-title {
+    color: var(--primary-blue) !important;
+    font-weight: 700;
+}
+
+/* Intro Box - Matching Alert Styles */
+.intro-alert-box {
+    background: var(--white);
+    /*border: 1px solid #333;*/
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.intro-alert-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Sub-section with Icon */
+.sub-section-header {
+    margin: 50px 0 30px;
+}
+
+.title-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout 
+.savings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}*/
+
+/* Individual Card - White with Border & Hover */
+/* Individual Card - Size and Proportion matched to image */
+.savings-card {
+    background: var(--white);
+   /* border: 1px solid #333; /* Keeping your preferred Alert style border */
+    border-radius: 24px;    /* Slightly more rounded like the image */
+    
+    /* Box Sizing Logic */
+    padding: 60px 40px;      /* Increased padding to match the image spacing */
+    min-height: 480px;      /* Added height to match the taller proportions */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically within the tall box */
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Updated Hover to maintain the new size */
+.savings-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Ensure the grid doesn't squash the new card size */
+.savings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Slightly wider gap like the image */
+    margin-top: 40px;
+    max-width: 1200px; /* Keeps the boxes from getting too wide on large screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-image-placeholder {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.card-image-placeholder img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* "Savings Account" Pill (Not a button) */
+.savings-label {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 4px 15px;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.savings-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #1fa7b1;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.savings-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* Learn More Button - Reuse your primary button styles */
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #10b6c2;
+    padding: 8px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-gold); /* Using your gold theme */
+    color: white;
+    border-color: var(--accent-gold);
+}
+
+/* --- Investments Page Styles --- */
+
+.investments-page {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blue-title {
+    color: var(--primary-blue) !important;
+    font-weight: 700;
+}
+
+.top-icon-wrapper {
+    margin-bottom: 10px;
+}
+
+.top-icon-wrapper img {
+    width: 60px;
+    opacity: 0.8;
+}
+
+/* Grid for the 3 Tall Cards */
+.investments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+/* Individual Card Style - Tall & Airy */
+.investment-alert-card {
+    background: var(--white);
+    /*border: 1px solid #333; /* Dark border as per alert style */
+    border-radius: 24px;
+    padding: 60px 30px; /* High padding for size */
+    min-height: 480px;  /* Tall proportion */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.investment-alert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    width:150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.card-img-top img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Tag style (Non-button) */
+.investment-tag {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px 20px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.investment-alert-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #1fa7b1;
+    font-weight: 700;
+}
+
+.investment-alert-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* --- Horizontal Wide Box Style --- */
+
+.horizontal-alert-box {
+    background: var(--white);
+    /*border: 1px solid #333;*/
+    border-radius: 30px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.horizontal-alert-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.hab-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hab-text {
+    flex: 2;
+}
+
+.hab-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hab-text p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.hab-actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+/* Framed Image inside the horizontal box */
+.hab-image-frame {
+    /*border: 1px solid #333;*/
+    border-radius: 20px;
+    padding: 15px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hab-image-frame img {
+    margin-left: 11px;
+    width: 250px;
+    height: 150px;
+    
+}
+
+/* Button Styles - Matching previous pages */
+.btn-outline, .btn-large {
+    display: inline-block;
+    border: 1px solid #1db4b9;
+    padding: 10px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #199ab1;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-large {
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+}
+
+.btn-outline:hover, .btn-large:hover {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .investments-grid { grid-template-columns: repeat(2, 1fr); }
+    .hab-content { flex-direction: column; text-align: center; }
+    .hab-actions { justify-content: center; }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .savings-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .savings-grid { grid-template-columns: 1fr; }
+}

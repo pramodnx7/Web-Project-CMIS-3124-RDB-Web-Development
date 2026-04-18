@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Profile - RDB Bank</title>
+    <link rel="stylesheet" href="../css/FrontStyle.css">
+    <link rel="stylesheet" href="../css/Bank_Profile.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" class="social-icon facebook" title="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+        <span class="social-icon-label">Facebook</span>
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" class="social-icon twitter" title="Twitter/X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+        <span class="social-icon-label">X</span>
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" class="social-icon linkedin" title="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+        <span class="social-icon-label">LinkedIn</span>
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" class="social-icon youtube" title="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+        <span class="social-icon-label">YouTube</span>
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" class="social-icon instagram" title="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+        <span class="social-icon-label">Instagram</span>
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+        <span class="social-icon-label">WhatsApp</span>
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" class="social-icon tiktok" title="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+        <span class="social-icon-label">TikTok</span>
+    </a>
+</div>
+<!-- Calculator Sidebar -->
+<div class="calculator-sidebar">
+    <a href="loan_calculator.html" title="Loan Calculator">
+        <span class="calc-text">Calculator</span>
+        <span class="calc-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm-8 8H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2z"/>
+            </svg>
+        </span>
+    </a>
+</div>
+    <div class="top-bar">
+        Sri Lanka's Premier State Owned Development Bank
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="frontend.html" class="logo">
+                <div class="logo-icon">
+                    <img src="../Assests/Images/Regional_Development_Bank_Logo.png" alt="RDB BANK" class="logo-img">
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="frontend.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger active">About Us</button>
+                    <div class="dropdown-menu">
+                        <a href="About_us.html" class="dropdown-item">About RDB</a>
+                        <a href="Bank_Profile.html" class="dropdown-item">Bank Profile</a>
+                        <a href="Customer_Charter.html" class="dropdown-item">Customer Charter</a>
+                        <a href="Chairman.html" class="dropdown-item">Chairman</a>
+                        <a href="GeneralManager.html" class="dropdown-item">General Manager/CEO</a>
+                        <a href="Board_of_Directors.html" class="dropdown-item">Board of Directors</a>
+                        <a href="CorporateManagement.html" class="dropdown-item">Corporate Management</a>
+                        <a href="ExecutiveManagement.html" class="dropdown-item">Executive Management</a>
+                    </div>
+                </div>
+                <a href="Careers.html" class="nav-link">Careers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">Products & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="Savings_Investments.html" class="dropdown-item">Savings & Investments</a>
+                        <a href="Loans_&_Advances.html" class="dropdown-item">Loans & Advances</a>
+                        <a href="leasing.html" class="dropdown-item">Leasing</a>
+                        <a href="RDB_Services.html" class="dropdown-item">Other Services</a>
+                    </div>
+                </div>
+                <a href="RDB_Services.html" class="nav-link">Info</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">MediaRoom</button>
+                    <div class="dropdown-menu">
+                        <a href="AlertPage.html" class="dropdown-item">Alerts</a>
+                    </div>
+                </div>
+                <a href="branch_network.html" class="nav-link">Branch Network</a>
+                <a href="contact_us.html" class="nav-link">Contact Us</a>
+                <div class="nav-search">
+                    <button class="search-btn" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search..." aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-nav">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="frontend.html">Home</a>
+                <span>></span>
+                <a href="About_us.html">About Us</a>
+                <span>></span>
+                <span class="current">Bank Profile</span>
+            </nav>
+        </div>
+    </div>
+
+    <main class="bank-profile-page">
+        <div class="container">
+            <h1 class="page-main-title">Bank Profile</h1>
+
+            <!-- Main Content Area with Tabs -->
+            <div class="profile-content-wrapper">
+                <div class="profile-left">
+                    <!-- Tab Navigation -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="registered-name">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                            Registered Name
+                        </button>
+                        <button class="tab-btn" data-tab="legal-status">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                            Legal Status
+                        </button>
+                        <button class="tab-btn" data-tab="head-office">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                            Registered Head Office
+                        </button>
+                        <button class="tab-btn" data-tab="secretary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            Secretary to Board
+                        </button>
+                        <button class="tab-btn" data-tab="auditors">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                            Auditors
+                        </button>
+                        <button class="tab-btn" data-tab="provincial-offices">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            Provincial Offices
+                        </button>
+                    </div>
+
+                    <!-- Tab Content Panels -->
+                    <div class="tab-content-wrapper">
+                        <!-- Registered Name Tab -->
+                        <div class="tab-content active" id="registered-name">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                                    <h2>Registered Name of The Bank</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p class="bank-name-highlight">Pradeshiya Sanwardhana Bank / Regional Development Bank (RDB)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Legal Status Tab -->
+                        <div class="tab-content" id="legal-status">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <h2>Legal Status</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p>A Government owned Licensed Specialized Bank incorporated in Sri Lanka by the <strong>Pradeshiya Sanwardhana Bank Act No. 41 of 2008</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Board of Directors Tab -->
+                        <div class="tab-content" id="board-directors">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                                    <h2>Board of Directors</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Registered Head Office Tab -->
+                        <div class="tab-content" id="head-office">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                                    <h2>Registered Head Office</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="office-info">
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                            <span>933, Kandy Road, Wedamulla, Kelaniya 11600, Sri Lanka.</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                            <span>Tel: +94 11 203 54 548</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+                                            <span>Fax: +94 011 2906883</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                            <span>Email: info@rdb.lk</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+                                            <span>Website: <a href="https://www.rdb.lk" target="_blank">www.rdb.lk</a></span>
+                                        </div>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                                            <span>VAT Registration No: 4002/72339-7000</span>
+                                        </div>
+                                        <div class="info-item rating-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <span>Rating: <strong>BBB+ (Stable)</strong> USA</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secretary Tab -->
+                        <div class="tab-content" id="secretary">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                    <h2>Secretary to The Board of Directors</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="secretary-info">
+                                        <h3 class="secretary-name">Mrs. H.M.T. Nayakkara</h3>
+                                        <p class="secretary-title">Attorney-at-Law</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auditors Tab -->
+                        <div class="tab-content" id="auditors">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                                    <h2>Auditors</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="auditor-info">
+                                        <h3>Auditor General</h3>
+                                        <p class="auditor-department">Auditor General's Department</p>
+                                        <div class="info-item">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                            <span>306/72, Polduwa Road, Battaramulla, Sri Lanka.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Provincial Offices Tab -->
+                        <div class="tab-content" id="provincial-offices">
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                    <h2>Provincial Offices</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="provincial-offices-grid">
+                                        <div class="provincial-office-card">
+                                            <h4>Central Provincial Office</h4>
+                                            <p>No.16, Dharmashoka Mawatha, Kandy.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>Eastern Provincial Office</h4>
+                                            <p>No.51 A, New Kalmunai Road, Kallady, Batticaloa.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>North Central Provincial Office</h4>
+                                            <p>No.65 D, 4th Lane, Abuya Place, Anuradhapura.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>North Western Provincial Office</h4>
+                                            <p>No.155, Negombo Road, Kurunegala.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>Sabaragamuwa Provincial Office</h4>
+                                            <p>No.510, Waraliyapa, Rathnapura.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>Southern Provincial Office</h4>
+                                            <p>No.28 B, Uyanwatta Ground Road, Uyanwatta, Matara.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>Uva Provincial Office</h4>
+                                            <p>No.26, Bank Road, Badulla.</p>
+                                        </div>
+                                        <div class="provincial-office-card">
+                                            <h4>Western Provincial Office</h4>
+                                            <p>No.38, Miriswatle, Kandy Road, Gampaha.</p>
+                                        </div>
+                                    </div>
+                                    <a href="branch_network.html" class="view-more-link">View All Branch Locations â†’</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About RDB</h3>
+                    <p>
+                        Regional Development Bank is the premier state-owned development bank in Sri Lanka, dedicated to uplifting the grassroots economy.
+                    </p>
+                    <div class="footer-social-links">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" aria-label="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" aria-label="X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" aria-label="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" aria-label="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" aria-label="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" aria-label="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" aria-label="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+    </a>
+</div>
+                    <div class="footer-links-section">
+                        <ul class="footer-meta-links">
+                            <li><a href="Careers.html">Careers</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#company-policies">Company Policies</a></li>
+                            <li><a href="#sitemap">Sitemap</a></li>
+                            <li><a href="complaint_form.html">Complaints & Grievances</a></li>
+                            <li><a href="#terms">Terms of use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="About_us.html">About Us</a></li>
+                        <li><a href="Board_of_Directors.html">Board of Directors</a></li>
+                        <li><a href="branch_network.html">Branch Network</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="Financial_Reports.html">Financial Reports</a></li>
+                        <li><a href="Procurement.html">Procurement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="Savings_Investments.html">Savings Accounts</a></li>
+                        <li><a href="Loans_&_Advances.html">Agricultural Loans</a></li>
+                        <li><a href="loan_calculator.html">Loan Calculator</a></li>
+                        <li><a href="leasing.html">Leasing</a></li>
+                        <li><a href="RDB_Services.html">RDB WePay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Hotline: 1972</li>
+                        <li>Email: info@rdb.lk</li>
+                        <li>No. 16, Sir Chittampalam A. Gardiner Mawatha, Colombo 02</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Regional Development Bank. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tab Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+
+                    // Remove active from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Add active to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmkidjmel004jey6rmxo23vr8'></zapier-interfaces-chatbot-embed>
+</body>
+</html>
+
+

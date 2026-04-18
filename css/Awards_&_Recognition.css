@@ -1,0 +1,155 @@
+/* --- Awards & Recognition Page Styles --- */
+
+.awards-section {
+    padding: 30px 0;
+    background-color: #f4f7f6;
+    color: var(--primary-blue);
+    position: relative;
+    
+    
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 40px 30px;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.award-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+}
+
+.award-image {
+    background-color: #fcfcfc;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+
+.award-image img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.award-content {
+    padding: 20px;
+}
+
+.award-content h3 {
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.org-name {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.award-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.award-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read-more-link {
+    font-size: 0.8rem;
+    color: #0099AB;
+    border: 1px solid #0099AB;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.read-more-link:hover {
+    background-color: #0099AB;
+    color: white;
+}
+
+/* Loading and Empty States */
+.loading-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+/* Award Category Badge */
+.award-category {
+    font-size: 0.75rem;
+    background: linear-gradient(135deg, #0099AB, #007B8A);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* --- Floating "Ready to Get Started" Card --- */
+
+.floating-card {
+    background-color: var(--white) !important;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: 1px solid #ddd;
+    padding: 40px !important;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.info-box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Ensure buttons use the exact existing style */
+.info-right {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .info-box-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-right {
+        justify-content: center;
+    }
+}

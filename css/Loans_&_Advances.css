@@ -1,0 +1,97 @@
+/* --- Loans Page Specific Styles --- */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blue-title {
+    color: #0099ab;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Scheme Selector (Row 1) */
+.scheme-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.active-scheme-teal {
+    background-color: #0099ab !important;
+    color: #fff !important;
+    border-color: #0099ab !important;
+}
+
+/* Tab Navigation (Pill Shape Buttons) */
+.loan-tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0 60px 0;
+}
+
+.tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 32px;      /* Deep horizontal padding for pill look */
+    border-radius: 50px;     /* The Perfect Curve */
+    border: 2px solid #0099ab;
+    background-color: #fff;
+    color: #0099ab;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;   /* No underline for <a> tags */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: #0099ab;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 153, 171, 0.3);
+}
+
+/* Icon Handling */
+.tab-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    transition: filter 0.3s;
+}
+
+/* Turn icons white when background is teal */
+.tab-btn.active .tab-icon, 
+.tab-btn:hover .tab-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Sub-section Title with Icon */
+.sub-section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.title-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ensure images in cards look consistent */
+.card-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

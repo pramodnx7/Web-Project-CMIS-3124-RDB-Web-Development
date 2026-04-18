@@ -1,0 +1,114 @@
+/* --- Maintenance Detail Page Styles --- */
+
+.maintenance-detail-page {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.maintenance-header h1 {
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Topic color in blue as requested */
+.highlight-blue {
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.maintenance-header .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.meta-info {
+    margin-bottom: 40px;
+}
+
+.meta-info .date {
+    display: block;
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.breadcrumb {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.breadcrumb a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-blue);
+}
+
+/* Layout Wrapper */
+.maintenance-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.main-article {
+    flex: 2;
+}
+
+.main-article p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* Related Alerts Box (Gray Style) */
+.related-alerts-box {
+    flex: 1;
+    background-color: #e0e0e0; /* Gray color */
+    padding: 30px;
+    border-radius: 4px; /* Slightly sharper as per image */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover Style for Gray Box */
+.related-alerts-box:hover {
+    background-color: #d6d6d6;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #ccc;
+}
+
+.related-alerts-box h3 {
+    font-size: 1.4rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.related-alerts-box ul {
+    padding-left: 20px;
+}
+
+.related-alerts-box ul li {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Responsive adjustment */
+@media (max-width: 992px) {
+    .maintenance-content-wrapper {
+        flex-direction: column;
+    }
+    .maintenance-header h1 {
+        font-size: 2rem;
+    }
+}

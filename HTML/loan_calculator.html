@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator - Regional Development Bank</title>
+    <link rel="stylesheet" href="../css/FrontStyle.css">
+    <link rel="stylesheet" href="../css/loan_calculator.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" class="social-icon facebook" title="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+        <span class="social-icon-label">Facebook</span>
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" class="social-icon twitter" title="Twitter/X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+        <span class="social-icon-label">X</span>
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" class="social-icon linkedin" title="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+        <span class="social-icon-label">LinkedIn</span>
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" class="social-icon youtube" title="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+        <span class="social-icon-label">YouTube</span>
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" class="social-icon instagram" title="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+        <span class="social-icon-label">Instagram</span>
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+        <span class="social-icon-label">WhatsApp</span>
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" class="social-icon tiktok" title="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+        <span class="social-icon-label">TikTok</span>
+    </a>
+</div>
+<!-- Calculator Sidebar -->
+<div class="calculator-sidebar">
+    <a href="loan_calculator.html" title="Loan Calculator">
+        <span class="calc-text">Calculator</span>
+        <span class="calc-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm-8 8H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2z"/>
+            </svg>
+        </span>
+    </a>
+</div>
+    <div class="top-bar">
+        Sri Lanka's Premier State Owned Development Bank
+    </div>
+
+                <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="frontend.html" class="logo">
+                <div class="logo-icon">
+                    <img src="../Assests/Images/Regional_Development_Bank_Logo.png" alt="RDB BANK" class="logo-img">
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="frontend.html" class="nav-link active">Home</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">About Us</button>
+                    <div class="dropdown-menu">
+                        <a href="About_us.html" class="dropdown-item">About RDB</a>
+                        <a href="Bank_Profile.html" class="dropdown-item">Bank Profile</a>
+                        <a href="Customer_Charter.html" class="dropdown-item">Customer Charter</a>
+                        <a href="Chairman.html" class="dropdown-item">Chairman</a>
+                        <a href="GeneralManager.html" class="dropdown-item">General Manager/CEO</a>
+                        <a href="Board_of_Directors.html" class="dropdown-item">Board of Directors</a>
+                        <a href="CorporateManagement.html" class="dropdown-item">Corporate Management</a>
+                        <a href="ExecutiveManagement.html" class="dropdown-item">Executive Management</a>
+                    </div>
+                </div>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger" type="button" id="productsBtn" aria-haspopup="true" aria-expanded="false" aria-controls="productsMenu">
+                        Products & Services
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu glass" id="productsMenu" role="menu" aria-hidden="true">
+                        <a href="Savings_Investments.html" class="dropdown-item" role="menuitem" tabindex="-1">Savings & Investments</a>
+                        <a href="Loans_&_Advances.html" class="dropdown-item" role="menuitem" tabindex="-1">Loans & Advances</a>
+                        <a href="leasing.html" class="dropdown-item" role="menuitem" tabindex="-1">Leasing</a>
+                        <a href="RDB_Services.html" class="dropdown-item" role="menuitem" tabindex="-1">Other Services</a>
+                    </div>
+                </div>
+                <a href="RDB_Services.html" class="nav-link">Info</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">MediaRoom</button>
+                    <div class="dropdown-menu">
+                        <a href="AlertPage.html" class="dropdown-item">Alerts</a>
+                        <a href="Awards_&_Recognition.html" class="dropdown-item">Awards & Recognition</a>
+                    </div>
+                </div>
+                <a href="branch_network.html" class="nav-link">Branch Network</a>
+                <a href="contact_us.html" class="nav-link">Contact Us</a>
+                <div class="nav-search">
+                    <button class="search-btn" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search..." aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Loan Calculator Section -->
+    <main class="calculator-page">
+        <div class="calculator-header">
+            <h1>Loan Calculator</h1>
+            <p>Calculate your monthly EMI and plan your finances</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="savings">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 14V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-9-1c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-6v11c0 1.1-.9 2-2 2H4v-2h17V7h2z"/>
+                </svg>
+                Savings
+            </button>
+            <button class="category-tab" data-category="personal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                Personal Loans
+            </button>
+            <button class="category-tab" data-category="leasing">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                </svg>
+                Leasing
+            </button>
+        </div>
+
+        <!-- Loan Category Selection -->
+        <div class="loan-categories">
+            <!-- Savings Category -->
+            <div class="category-group" data-category="savings">
+                <div class="category-item active" data-rate="8" data-name="Kekulu" data-link="NewKakulu.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="8" r="4"/>
+                            <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Kekulu</span>
+                </div>
+                <div class="category-item" data-rate="9" data-name="14 Plus" data-link="14plus.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">14 Plus</span>
+                </div>
+                <div class="category-item" data-rate="10" data-name="Liya Saviya" data-link="liya_saviya.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM6.4 17.2c.5-1.7 3.2-2.5 5.6-2.5s5.1.8 5.6 2.5c-1.5 1.1-3.4 1.8-5.6 1.8s-4.1-.7-5.6-1.8zM12 12c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Liya Saviya</span>
+                </div>
+                <div class="category-item" data-rate="11" data-name="RDB New Life" data-link="rdb_new_life.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">RDB New Life</span>
+                </div>
+                <div class="category-item" data-rate="12" data-name="RDB Ayojana" data-link="rdb_ayojana.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">RDB Ayojana</span>
+                </div>
+                <div class="category-item" data-rate="13" data-name="RDB Uththama" data-link="rdb_uththama.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">RDB Uththama</span>
+                </div>
+            </div>
+
+            <!-- Personal Loans Category -->
+            <div class="category-group" data-category="personal" style="display: none;">
+                <div class="category-item" data-rate="14" data-name="Consumption Loan" data-link="consumption_loan.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h12v12z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Consumption</span>
+                </div>
+                <div class="category-item" data-rate="18" data-name="Pawning" data-link="pawning.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm3.5 12.09l-1.41 1.41L12 13.42 9.91 15.5 8.5 14.09 10.59 12 8.5 9.91 9.91 8.5 12 10.59l2.09-2.09 1.41 1.41L13.42 12l2.08 2.09z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Pawning</span>
+                </div>
+                <div class="category-item" data-rate="12" data-name="Housing Loan" data-link="housing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Housing</span>
+                </div>
+                <div class="category-item" data-rate="11" data-name="Pensioner Loan" data-link="pension.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Pensioner</span>
+                </div>
+                <div class="category-item" data-rate="10" data-name="Ethera Isuru" data-link="ethera_isuru.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Ethera Isuru</span>
+                </div>
+                <div class="category-item" data-rate="16" data-name="Speed Cash" data-link="speed_cash.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Speed Cash</span>
+                </div>
+            </div>
+
+            <!-- Leasing Category -->
+            <div class="category-group" data-category="leasing" style="display: none;">
+                <div class="category-item" data-rate="11" data-name="RDB Leasing" data-link="leasing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Vehicle Lease</span>
+                </div>
+                <div class="category-item" data-rate="12" data-name="Truck Leasing" data-link="leasing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Truck Lease</span>
+                </div>
+                <div class="category-item" data-rate="10" data-name="Bus Leasing" data-link="leasing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Bus Lease</span>
+                </div>
+                <div class="category-item" data-rate="13" data-name="Van Leasing" data-link="leasing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17 5H3c-1.1 0-2 .89-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-3-4-3-2zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l3 4h-4z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Van Lease</span>
+                </div>
+                <div class="category-item" data-rate="9" data-name="Cab Leasing" data-link="leasing.html">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H15V3H9v2H6.5c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                        </svg>
+                    </div>
+                    <span class="category-label">Cab Lease</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-container">
+            <!-- Left Section - Calculator Form -->
+            <div class="calculator-form">
+                <div class="form-header">
+                    <svg class="calculator-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00bcd4" stroke-width="2">
+                        <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                        <line x1="8" y1="6" x2="16" y2="6"></line>
+                        <line x1="8" y1="10" x2="16" y2="10"></line>
+                        <line x1="8" y1="14" x2="10" y2="14"></line>
+                        <line x1="14" y1="14" x2="16" y2="14"></line>
+                        <line x1="8" y1="18" x2="10" y2="18"></line>
+                        <line x1="14" y1="18" x2="16" y2="18"></line>
+                    </svg>
+                    <h2>Calculate Your EMI</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="loanAmount">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00bcd4" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+                        </svg>
+                        Loan Amount (LKR)
+                    </label>
+                    <input type="number" id="loanAmount" class="form-input" value="0" min="0" max="100000000">
+                    <input type="range" id="loanAmountRange" class="form-slider" min="0" max="100000000" value="0" step="10000">
+                </div>
+
+                <div class="form-group">
+                    <label for="interestRate">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00bcd4" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        Interest Rate (% per annum)
+                    </label>
+                    <input type="number" id="interestRate" class="form-input" value="0" min="0" max="50" step="0.1">
+                    <input type="range" id="interestRateRange" class="form-slider" min="0" max="50" value="0" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="loanTenure">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00bcd4" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Loan Tenure
+                    </label>
+                    <div class="tenure-input-group">
+                        <input type="number" id="loanTenure" class="form-input tenure-input" value="0" min="0" max="30">
+                        <select id="tenureType" class="tenure-select">
+                            <option value="years">Years</option>
+                            <option value="months">Months</option>
+                        </select>
+                    </div>
+                    <input type="range" id="loanTenureRange" class="form-slider" min="0" max="30" value="0" step="1">
+                </div>
+
+                <button class="reset-btn" id="resetBtn">Reset Calculator</button>
+            </div>
+
+            <!-- Right Section - Results -->
+            <div class="calculator-results">
+                <div class="result-card highlight">
+                    <p class="result-label">Your Monthly EMI</p>
+                    <h3 class="result-value" id="monthlyEMI">LKR 0</h3>
+                </div>
+
+                <div class="result-card">
+                    <p class="result-label">Total Interest Payable</p>
+                    <h3 class="result-value" id="totalInterest">LKR 0</h3>
+                </div>
+
+                <div class="result-card">
+                    <p class="result-label">Total Payment</p>
+                    <h3 class="result-value" id="totalPayment">LKR 0</h3>
+                </div>
+
+                <div class="payment-breakdown">
+                    <h4>Payment Breakdown</h4>
+                    <div class="breakdown-chart">
+                        <div class="chart-bar">
+                            <div class="bar-segment principal" id="principalBar" style="width: 0%;">
+                                <span class="bar-label">Principal</span>
+                            </div>
+                            <div class="bar-segment interest" id="interestBar" style="width: 0%;">
+                                <span class="bar-label">Interest</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breakdown-legend">
+                        <div class="legend-item">
+                            <span class="legend-color principal-color"></span>
+                            <span class="legend-text">Principal Amount</span>
+                            <span class="legend-value" id="principalAmount">LKR 0</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color interest-color"></span>
+                            <span class="legend-text">Total Interest</span>
+                            <span class="legend-value" id="interestAmount">LKR 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <div class="how-to-use">
+            <h2>How to Use This Calculator</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Enter Loan Amount</h3>
+                    <p>Enter your desired loan amount in LKR</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Set Interest Rate</h3>
+                    <p>Set the interest rate (check our interest rates page for current rates)</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Choose Tenure</h3>
+                    <p>Choose your loan tenure in months or years</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>View Results</h3>
+                    <p>View your monthly EMI and total payment instantly</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This calculator provides an estimate only. Actual EMI may vary based on processing fees, insurance, and other charges. Please contact your nearest RDB branch for accurate quotations.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About RDB</h3>
+                    <p>
+                        Regional Development Bank is the premier state-owned development bank in Sri Lanka, dedicated to uplifting the grassroots economy.
+                    </p>
+                    <div class="footer-social-links">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" aria-label="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" aria-label="X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" aria-label="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" aria-label="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" aria-label="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" aria-label="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" aria-label="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+    </a>
+</div>
+                    <div class="footer-links-section">
+                        <ul class="footer-meta-links">
+                            <li><a href="Careers.html">Careers</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#company-policies">Company Policies</a></li>
+                            <li><a href="#sitemap">Sitemap</a></li>
+                            <li><a href="complaint_form.html">Complaints & Grievances</a></li>
+                            <li><a href="#terms">Terms of use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="About_us.html">About Us</a></li>
+                        <li><a href="Board_of_Directors.html">Board of Directors</a></li>
+                        <li><a href="branch_network.html">Branch Network</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="Financial_Reports.html">Financial Reports</a></li>
+                        <li><a href="Procurement.html">Procurement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="Savings_Investments.html">Savings Accounts</a></li>
+                        <li><a href="Loans_&_Advances.html">Agricultural Loans</a></li>
+                        <li><a href="loan_calculator.html">Loan Calculator</a></li>
+                        <li><a href="leasing.html">Leasing</a></li>
+                        <li><a href="RDB_Services.html">RDB WePay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Hotline: 1972</li>
+                        <li>Email: info@rdb.lk</li>
+                        <li>No. 16, Sir Chittampalam A. Gardiner Mawatha, Colombo 02</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Regional Development Bank. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmkidjmel004jey6rmxo23vr8'></zapier-interfaces-chatbot-embed>
+
+    <script src="../js/loan_calculator.js"></script>
+</body>
+</html>
+
+
+
+
+
